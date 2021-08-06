@@ -1,0 +1,53 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h1 class="btn btn-default heading">Who's your BTS lookalike?</h1>
+      <br><br>
+
+      <p id="sub" style="font-size: 22px;">Do you look like...</p>
+      <br><br>
+      <b class="members">
+        RM <img src="https://lh3.googleusercontent.com/cVA7oKmFjdjnaVY7D39HOiuLVGbn0QPEfBNKkvZ2hsxdaVGuX5DRBcGlQUN6e9MSM_9690Xabpo2PcC6K5eyQJ5z"><hr>
+        Jin <img src="https://lh3.googleusercontent.com/rsinNbEDPHC6RzCyBHdQJFgqWkkz0g_fb_iEqq2fcMad-orgGSZx_FjU65Q7m7IA6Wve_Hrts5IlGGlIuUzq75E"><hr>
+        Suga <img src="https://lh3.googleusercontent.com/cyWtWiqpuQwszSl8gX2IwMT_h11PQBCg_B5GutW1q2Ex0krpY_JCjIMbJ1AhQZxrs7CnvR89VIPdJ4B2mUA4yXM01Q"><hr>
+        J-Hope <img src="https://lh3.googleusercontent.com/gCZfFx5gVLvXnNLw_SWHNZDf55RYNTVdRVhKrYK10rmS1C1vfg0yKSFlSXJ3IZrPP6hseWgEv6jf7vxv7itTpJIc5A"><hr>
+        Jimin <img src="https://lh3.googleusercontent.com/u3g34k-ainjxEFOyJ58-4Dvch-uqQ6q2mhN_JT3E2wHjbv-LpmCR_-4Uowdt_A5cdQyD4eDWIZvm-Hpy7WgrzeK7YQ"><hr>
+        V <img src="https://lh3.googleusercontent.com/P8iszSIOvGKrqWYo_DYebQ5FnxH1IbgumJX0hkEGYdEoH98cJFsP8j4y8Z49HpL_KqzYkEoy394QZ2q7MpCJsHPIXA"><hr>
+        Jungkook <img src="https://lh3.googleusercontent.com/JKKCfUNHJytFHO9WMyjnVdbC2UrAGmszPNQxbMPieQz4OJ0EW9GmXlZDYc-bq-qPqrDHWscStV4YguiF9Ux1nWY"><hr>
+      </b>
+      <label style="font-size: 19px;">Webcam View - </label>
+      <div id="camera"></div>
+      <br><br>
+      <button class="btn clickButton" onclick="clickImage()"><span class="glyphicon glyphicon-camera buttonSpan"></span></button>
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+      <button class="btn identifyButton" onclick="identify()"><span class="glyphicon glyphicon-search buttonSpan"></span></button>
+      <br><br>
+
+      <p style="font-size: 19px;">Object:<span id="objectName"></span></p>
+      <p style="font-size: 19px;">Accuracy:<span id="objectAccuracy"></span></p>
+    </center>
+
+  </div>
+
+  </body>
+</html>
+
+ 
